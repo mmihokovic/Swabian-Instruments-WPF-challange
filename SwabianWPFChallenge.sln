@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29806.167
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SwabianWPFChallenge", "SwabianWPFChallenge\SwabianWPFChallenge.csproj", "{7FB83368-13D6-4394-9F5F-4D0353BAEE5E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SwabianWPFChallenge.Domain", "SwabianWPFChallenge.Domain\SwabianWPFChallenge.Domain.csproj", "{72DF9002-225A-4964-BC84-235082C9E63B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7FB83368-13D6-4394-9F5F-4D0353BAEE5E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7FB83368-13D6-4394-9F5F-4D0353BAEE5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7FB83368-13D6-4394-9F5F-4D0353BAEE5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7FB83368-13D6-4394-9F5F-4D0353BAEE5E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{72DF9002-225A-4964-BC84-235082C9E63B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72DF9002-225A-4964-BC84-235082C9E63B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72DF9002-225A-4964-BC84-235082C9E63B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72DF9002-225A-4964-BC84-235082C9E63B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D19473BE-1A6A-4D3A-9AE6-75E010C0F042}
+	EndGlobalSection
+EndGlobal
