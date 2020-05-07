@@ -1,14 +1,21 @@
-﻿using SwabianWPFChallenge.Domain;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Text;
 
-namespace SwabianWPFChallenge
+namespace SwabianWPFChallenge.Domain
 {
-    public static class DataReader
+    public class FileDataReader: IDataSource
     {
-        public List<Point> LoadData(string fileLocation)
+        private readonly List<Point> points;
+
+        public FileDataReader(string filename)
+        {
+            points = LoadData(filename);
+        }
+
+        public List<Point> GetPoints => points;
+
+        private List<Point> LoadData(string fileLocation)
         {
             var textData = File.ReadAllText(fileLocation);
             var lines = textData.Split(System.Environment.NewLine);
@@ -25,7 +32,7 @@ namespace SwabianWPFChallenge
                 }
                 catch(Exception e)
                 {
-
+                    throw new Exception("Error parsing input data", e);
                 }
             }
             return points;

@@ -4,10 +4,8 @@ using System.Text;
 
 namespace SwabianWPFChallenge.Domain
 {
-    public enum FittingModelEnum
+    public interface IDataSource
     {
-        Linear = 1,
-        Exponential = 2,
-        Power = 3
+        List<Point> GetPoints { get; }
     }
 }

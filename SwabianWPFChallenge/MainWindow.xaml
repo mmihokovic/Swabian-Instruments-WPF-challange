@@ -3,11 +3,21 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:SwabianWPFChallenge"
+        xmlns:oxy="http://oxyplot.org/wpf"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Curve Fitting" Height="600" Width="800">
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="27*"/>
+            <ColumnDefinition Width="23*"/>
+        </Grid.ColumnDefinitions>
         <Button Content="Load data" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Click="Button_Click"/>
-
+        <Label Content="Select curve fitting model" HorizontalAlignment="Left" Margin="428,12,0,0" VerticalAlignment="Top" Width="159" Grid.ColumnSpan="2"/>
+        <oxy:Plot Width="750" Height="350" Grid.ColumnSpan="2" Margin="25,42,25,42">
+            <oxy:Plot.Series>
+                <oxy:LineSeries ItemsSource="{Binding points, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+            </oxy:Plot.Series>
+        </oxy:Plot>
     </Grid>
+
 </Window>
